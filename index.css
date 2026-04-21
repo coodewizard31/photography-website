@@ -1,6 +1,11 @@
 body {
     background-color: rgb(253, 249, 249);
 }
+#logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
 
 header a {
 
@@ -62,6 +67,7 @@ p {
     text-align: center;
     line-height: 1.9;
     border-radius: 19px;
+    font-weight: 800;
 }
 
 /* targeting images only */
@@ -82,7 +88,7 @@ p {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 9px;
+    border-radius: 13px;
 
 }
 /* form cosmetics */
