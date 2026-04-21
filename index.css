@@ -1,8 +1,9 @@
 body {
-    background-color: lightgrey;
+    background-color: rgb(253, 249, 249);
 }
 
 header a {
+
     text-decoration: none;
     color: inherit;
 }
@@ -13,6 +14,8 @@ header {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     padding: 24px 0;
     text-align: center;
+    overflow: hidden;
+    
 }
 
 header h1 {
@@ -48,42 +51,73 @@ section {
     margin: 30px auto;
 
 }
+
 /* spacing between text & images */
 p {
     background-color: #f4f4f4;
     padding: 15px;
     border: 1px solid #cccccc;
     margin-bottom: 30px;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 1.9;
+    border-radius: 19px;
 }
+
 /* targeting images only */
-.image grid {
-    grid-template-columns: repeat(3,1fr); 
+/* train tracks */
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     gap: 15px;
+    width: 70%;
+    margin: 20px auto;
 
 }
-/* targeting the images themselves*/
 
+/* targeting the images themselves*/
+/* image fits its sits without weid gaps */
+.image-grid img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 9px;
+
+}
+/* form cosmetics */
 form input,
-formtextarea,
+form textarea,
 form button {
     width: 100%;
-    padding: 13px;
-    margin-bottom: 18px;
+    padding: 16px;
+    margin-bottom: 19px;
     font-size: 16px;
     border: 1px solid #dddddd;
     border-radius: 9px;
+    box-sizing: border-box;
 
 }
 
 form input focus,
 form textarea:focus {
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0);
     font-size: 19px;
     font-weight: 600;
     border: none;
+    display: block;
+    width: 100%;
+    
+    margin-bottom: 19px;
+
 
 }
-
+/* form */
+form {
+    max-width: 50%;
+    margin:0 auto;
+}
+/* cosmetics on button click */
 form button {
     background-color: gold;
     color: whitesmoke;
@@ -91,4 +125,8 @@ form button {
     font-weight: 600;
     border: none;
     cursor: pointer;
+    padding: 10px 40px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
