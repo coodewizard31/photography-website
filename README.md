@@ -14,7 +14,7 @@ code .
 
 
 ## Live Site
-https://github.com/coodewizard31/photography-website
+https://coodewizard31.github.io/photography-website/
 
 ## Copyright & License
   © 2026 Frank Mwaura
